@@ -18,6 +18,10 @@ The plugin also adds 3 new `sfAction` methods (via the mixins design pattern): `
 
         $ cd plugins; svn co http://svn.symfony-project.com/plugins/sfSslRequirementExtraPlugin/trunk sfSslRequirementExtraPlugin
 
+	or via composer
+	
+        $ composer require w0rma/sf-ssl-requirement-extra-plugin	
+
   * Enable sfSslRequirementExtraPlugin (if not automatically enabled) @ config/ProjectConfiguration.class.php
 
         [php]
