@@ -73,12 +73,7 @@ class sfSslPatternRouting extends sfPatternRouting
     if ($name)
     {
       // named route
-      if (!isset($this->routes[$name]))
-      {
-        throw new sfConfigurationException(sprintf('The route "%s" does not exist.', $name));
-      }
-      $route = $this->routes[$name];      
-      $this->ensureDefaultParametersAreSet();
+      $route = $this->getRoute($name);
     }
     else
     {
