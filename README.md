@@ -2,7 +2,7 @@
 
 ## Overview
 
-The `sfSslRequirementExtra` is a symfony plugin that provides SSL integration for your application. Note that you should already have a webserver configured with ssl.
+The `sfSslRequirementExtra` is a symfony plugin that provides SSL integration for your application. The plugin requires https://github.com/LExpress/symfony1 which is a fork of symfony1.  Note that you should already have a webserver configured with ssl.
 
 It gives you 3 new security settings (specified in module's `security.yml`): `require_ssl`, `allow_ssl` and `generate_ssl`, allowing you to fully configure ssl requirement during url matching as well as url generation. Read more for explanations.
 
@@ -10,15 +10,7 @@ The plugin also adds 3 new `sfAction` methods (via the mixins design pattern): `
 
 ## Installation
 
-  * Install the plugin via plugin install
-
-        $ symfony plugin:install sfSslRequirementExtraPlugin
-
-    or via svn checkout
-
-        $ cd plugins; svn co http://svn.symfony-project.com/plugins/sfSslRequirementExtraPlugin/trunk sfSslRequirementExtraPlugin
-
-	or via composer
+  * Install the plugin via composer
 	
         $ composer require w0rma/sf-ssl-requirement-extra-plugin	
 
